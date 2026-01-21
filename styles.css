@@ -713,6 +713,90 @@ a:hover {
 }
 
 /* ============================================
+   TASTINGS SECTION
+   ============================================ */
+
+.tastings-section {
+    padding: var(--spacing-2xl) 0;
+    background-color: var(--cream);
+}
+
+.tastings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.tasting-card {
+    background: var(--light-bg);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.tasting-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.tasting-meta {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent-copper);
+    margin-bottom: var(--spacing-sm);
+}
+
+.tasting-description {
+    color: var(--text-light);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.8;
+}
+
+.tasting-includes {
+    list-style: none;
+    padding-left: 0;
+    border-top: 1px solid var(--border-light);
+    padding-top: var(--spacing-md);
+}
+
+.tasting-includes li {
+    padding: var(--spacing-xs) 0;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    position: relative;
+    padding-left: 22px;
+}
+
+.tasting-includes li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent-gold);
+    font-size: 1.2rem;
+}
+
+.tasting-contact {
+    background: var(--light-bg);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.tasting-contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+}
+
+.tasting-contact p {
+    color: var(--text-light);
+}
+
+/* ============================================
    WHY SECTION
    ============================================ */
 
@@ -1102,6 +1186,7 @@ a:hover {
     .history-grid,
     .varieties-grid,
     .wines-grid,
+    .tastings-grid,
     .why-grid,
     .routes-grid,
     .articles-grid,
